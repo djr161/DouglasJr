@@ -9,7 +9,7 @@ from Pedido import *
 from Pagamento import *
 from Avaliacao import*
 
-print("Seja bem vindo a PIZZARIA MUCHA LOKA! ★ ★ ★\n")
+print("Seja bem vindo a PIZZARIA MUCHA LOKA! ★ ★ ★ ★\n")
 cliente=Cliente()
 cliente.exibirInformacao()
 pizzaP.mostrarPizza()

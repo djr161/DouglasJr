@@ -54,7 +54,15 @@ class Endereco:
   def cadastrarEndereco(self):
     self.rua= input("\nDigite sua rua: ")
     self.bairro= input("\nDigite seu bairro: ")
-    self.numero= input("\nDigite o número da sua residência: ")
+    while True:
+      try:
+        self.numero= input("\nDigite o número da sua residência: ")
+        if len(self.numero)>=4:
+          raise ValueError
+        break
+      except ValueError:
+        print("Número de residência incorreto")
+        continue
     self.complemento= input("\nDigite o complemento: ")
     self.alterarEndereco()
 
