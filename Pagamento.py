@@ -50,9 +50,9 @@ class Pagamento:
     escolha=int(input("\nEscolha a forma de pagamento. Digite 1 para dinheiro e 2 para cartão. "))
 
     if escolha == 1:
-      print("\nVocê escolheu pagamento no dinheiro. ")
+      print("\nVocê escolheu pagamento no dinheiro. \n Obrigado pela preferencia ")
     elif escolha== 2:
-      print("\nVocê escolheu pagamento no cartão.")
+      print("\nVocê escolheu pagamento no cartão. \n Obrigado pela preferencia ")
     else:
       print("\nValor inválido.")
       self.escolherFormaPgto()

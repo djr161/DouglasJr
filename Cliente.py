@@ -39,7 +39,7 @@ class Cliente:
       time.sleep(2.5)
     elif pergunta==2:
       time.sleep(0.5)
-      print("Já vai? :(")
+      print("Agradecemos por logar em nosso site")
       sys.exit()
 
 class Endereco: 
@@ -57,7 +57,7 @@ class Endereco:
     while True:
       try:
         self.numero= input("\nDigite o número da sua residência: ")
-        if len(self.numero)>=4:
+        if len(self.numero)!=4:
           raise ValueError
         break
       except ValueError:
