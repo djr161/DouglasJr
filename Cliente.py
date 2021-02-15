@@ -4,7 +4,15 @@ import sys
 class Cliente:
   def __init__(self):
     self.nome=input("Insira seu nome completo: ")
-    self.telefone=input("\nInsira um telefone de contato: ")
+    while True:
+      try: 
+        self.telefone=input("\nInsira um telefone de contato: ")
+        if len(self.telefone)!=9:
+          raise ValueError
+        break
+      except ValueError:
+        print("Operação inválida")
+        continue
     self.email=input("\nInsira seu endereço de e-mail: ")
     self.senha=input("\nEscolha uma senha: ")
     self.endereco= Endereco()
