@@ -51,7 +51,7 @@ class Pagamento:
 
     if escolha == 1:
       print("\nVocê escolheu pagamento no dinheiro. \n Obrigado pela preferencia ")
-    elif escolha== 2:
+    elif escolha == 2:
       print("\nVocê escolheu pagamento no cartão. \n Obrigado pela preferencia ")
     else:
       print("\nValor inválido.")

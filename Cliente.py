@@ -14,7 +14,17 @@ class Cliente:
         print("Operação inválida")
         continue
     self.email=input("\nInsira seu endereço de e-mail: ")
-    self.senha=input("\nEscolha uma senha: ")
+    
+    while True:
+      try:
+        self.senha=input("\nDigite uma senha: ")
+        if len(self.senha)!=6:
+          raise ValueError
+        break
+      except ValueError:
+        print("Digite uma senha com 6 caracteres")
+        continue
+    
     self.endereco= Endereco()
 
   def exibirInformacao(self):
@@ -31,16 +41,21 @@ class Cliente:
     print("Complemento:",self.endereco.complemento)
     time.sleep(1.5)
 
+    
     pergunta=int(input("\nVocê deseja realizar seu pedido agora? Digite 1 para Sim e 2 para Não: "))
 
     if pergunta==1:
       time.sleep(0.5)
       print("\nDirecionando para o cardápio...\n")
-      time.sleep(2.5)
+          
+      time.sleep(0.5)
+      
+        
     elif pergunta==2:
       time.sleep(0.5)
       print("Agradecemos por logar em nosso site")
       sys.exit()
+    
 
 class Endereco: 
   
