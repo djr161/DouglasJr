@@ -14,3 +14,4 @@ cliente.exibirInformacao()
 pizzaP.mostrarPizza()
 
 
+print("ola mundo")
